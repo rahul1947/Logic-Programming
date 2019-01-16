@@ -93,13 +93,15 @@ select(X,[Y|Ys],[Y|Zs]) :- X != Y, select(X,Ys,Zs).
 	(d) Where two cards have the same rank, the higher denomination wins, for example, a pair of kings beats a pair of 7's.
 
 Hints: 
-	1. Represent a poker hand by a list of terms of the form card(Suit,Value). For example a hand consisting of the 2 of clubs, the 5 of spades, the queen of hearts, the queen of diamonds, and the 7 of spades would be represented by the list [card(clubs,2), card(spades,5), card(hearts,queen), card(diamonds,queen), card(spades,7)]. 
 
+	1. Represent a poker hand by a list of terms of the form card(Suit,Value). For example a hand consisting of the 2 of clubs, the 5 of spades, the queen of hearts, the queen of diamonds, and the 7 of spades would be represented by the list 
+	[card(clubs,2), card(spades,5), card(hearts,queen), card(diamonds,queen), card(spades,7)]. 
+	
 	2. It may be helpful to deﬁne relations such as 
 	has-flush(Hand), which is true if all the cards in Hand are of the same suit; 
 	has-full-house(Hand), which is true if Hand has three cards with the same value but in different suits, and the other two cards have the same different value; and 
 	has_straight(Hand),which is true if Hand has cards with consecutive values.  
-
+	
 	3. The number of cases to consider is reduced if the hand is first sorted.
 
 **Solution:** [Program 02](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/a02q02.pl) and for Better-Poker-Hand [Poker](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/pokerA2.pl)
