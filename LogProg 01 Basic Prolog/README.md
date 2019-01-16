@@ -1,7 +1,7 @@
 ## Logic Programming 01: Basic Prolog
 
 - [Rahul Nalawade](https://github.com/rahul1947) (rsn170330)
-- 2018-01-22
+- 2018-Jan-22
 
 **Problem:** [Basic Prolog](https://github.com/rahul1947/Logic-Programming/blob/master/LogProg%2001%20Basic%20Prolog/Basic-Prolog.pdf) 
 

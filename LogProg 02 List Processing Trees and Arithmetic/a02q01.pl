@@ -39,32 +39,32 @@ subsequence([],_).
 % before(X,Y,List): X is before Y in List
 before(X,Y,[X,Y|_]).
 before(X,Y,[_|T]) :- 
-	before(X,Y,T).
+    before(X,Y,T).
 
 % after(X,Y,List): X is after Y in List
 after(X,Y,[Y,X|_]).
 after(X,Y,[_|T]) :- 
-	after(X,Y,T).
+    after(X,Y,T).
 
 % adjacent(X,Y,List): X is adjacent to Y in List
 adjacent(X,Y,List) :- 
-	before(X,Y,List);
-	after(X,Y,List).
+    before(X,Y,List);
+    after(X,Y,List).
 
 % last(X,List): X is last element in List
 last(X,[X]).
 last(X,[_|T]) :- 
-	last(X,T).
+    last(X,T).
 
 %------------------------------------------------
 % double(L,LL): every element of L occure twice in LL
 double([],[]).
 double([H|T1],[H,H|T2]) :-
-	double(T1,T2).
+    double(T1,T2).
 
 %------------------------------------------------
 % reverse(List,Tsil): Tsil is the result of 
-%	reversing the list List.
+%   reversing the list List.
 
 % a: Naive reverse
 
