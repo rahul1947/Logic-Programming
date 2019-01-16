@@ -1,0 +1,11 @@
+clasp version 3.1.4
+Reading from stdin
+Solving...
+Answer: 1
+course(math) course(graphs) student(john) student(mary) took(john,graphs) took(john,math) took(mary,graphs) -took(mary,math) -can_graduate(mary) can_graduate(john)
+SATISFIABLE
+
+Models       : 1     
+Calls        : 1
+Time         : 0.000s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.000s

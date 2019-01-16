@@ -1,0 +1,3 @@
+ERROR: /home/rahul/Desktop/Semester 02/6374.001 Computational Logic/Assignments/Assignment 04/sasp-1.1.0/test/hw4p4q3.lp:10:27: Syntax error at "ML". Invalid token in rule body. Expected "," or ".".
+ERROR: /home/rahul/Desktop/Semester 02/6374.001 Computational Logic/Assignments/Assignment 04/sasp-1.1.0/test/hw4p4q3.lp:10:1: Syntax error at "legalMove". Invalid start of statement. Expected "compute", ":-" or identifier.
+One or more errors occurred while loading input files!

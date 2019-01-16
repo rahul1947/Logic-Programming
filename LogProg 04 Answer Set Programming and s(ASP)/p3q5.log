@@ -1,0 +1,11 @@
+clasp version 3.1.4
+Reading from stdin
+Solving...
+Answer: 1
+field(mathematics) field(science) person(daniela) ab_nw(mathematics) studies_natural_world(science) ab_pi(science) studies_pure_ideas(mathematics) studies(daniela,mathematics) studies(daniela,science) studies_our_place_in_the_world(daniela)
+SATISFIABLE
+
+Models       : 1     
+Calls        : 1
+Time         : 0.000s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.000s

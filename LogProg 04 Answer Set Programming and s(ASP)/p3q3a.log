@@ -1,0 +1,13 @@
+clasp version 3.1.4
+Reading from stdin
+Solving...
+Answer: 1
+american_diplomat(miriam) live_in(john,italy) country(united_states) country(italy) american_citizen(john) american_citizen(miriam) american_citizen(caleb) ab_citizen(john) ab_citizen(caleb) live_in(miriam,united_states) -live_in(miriam,italy) -live_in(john,united_states)
+Answer: 2
+american_diplomat(miriam) live_in(john,italy) country(united_states) country(italy) american_citizen(john) american_citizen(miriam) american_citizen(caleb) ab_citizen(john) ab_citizen(caleb) -live_in(miriam,united_states) -live_in(john,united_states)
+SATISFIABLE
+
+Models       : 2     
+Calls        : 1
+Time         : 0.000s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.000s

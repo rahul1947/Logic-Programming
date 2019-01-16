@@ -1,0 +1,11 @@
+clasp version 3.1.4
+Reading from stdin
+Solving...
+Answer: 1
+saxophone(sm6) part(spring) part(high_D_key) has(jake,sm6) has(mo,sm6) is_part(high_D_key,sm6) is_part(spring,high_D_key) broken(mo,spring) is_part(spring,sm6) owns(jake,high_D_key) owns(jake,spring) owns(mo,high_D_key) owns(mo,spring) -broken(jake,spring) works(jake,sm6) -works(mo,sm6)
+SATISFIABLE
+
+Models       : 1     
+Calls        : 1
+Time         : 0.000s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.000s
