@@ -1,0 +1,167 @@
+All exercise numbers refer to the Sterling and Shapiro text book.
+
+1. Exercises 8.3.1 (i), (iii), (vi), (vii)
+
+    (i) Write an iterative version for triangle(N,T), posed as Exercise 8.2(i).
+
+    (iii) Rewrite Program 8.5 so that the successive integers are generated in descending order.
+
+    (vi) Write a program to find the minimum of a list of integers.
+
+    (vii) Rewrite Program 8.11 for finding the length of a list so that it is iterative. (Hint: Use a counter, as in Program 8.3) 
+
+
+2. Exercises 9.2.1 (i), (ii), (iv), (v).
+
+    (i) Define a predicate occurrences(Sub,Term,N), true if N is the number of occurrences of subterm Sub in Term. Assume that Term is ground. 
+
+    (ii) Define a predicate position(Subterm,Term,Position), where Position is a list of argument positions identifying Subterm within Term.
+
+    (iv) Define functor and arg in terms of univ. How can the programs be used?
+
+    (v) Rewrite Program 9.3 for substitute so that it uses univ. 
+    % substitute(Old, New, OldTerm, NewTerm): 
+    % NewTerm is the result of replacing all occurrences of Old in OldTerm by New.
+
+    substitute(Old,New,Old,New).
+
+    substitute(Old,_,Term,Term) :- 
+        constant(Term), Term \= Old.
+
+    substitute(Old,New,Term,Term1) :- 
+        compound(Term), functor(Term,F,N), 
+        functor(Term1,F,N), 
+        substitute(N,Old,New,Term,Term1).
+
+    substitute(N,Old,New,Term,Term1) :-
+        N > 0, arg(N,Term,Arg), 
+        substitute(Old,New,Arg,Arg1),
+        arg(N,Term1,Arg1), N1 is N-1, 
+        substitute(N1,Old,New,Term,Term1).
+    substitute(0,Old,New,Term,Term1).
+
+    constant(X) :- atomic(X).
+
+    Program 9.3 A program for substituting in a term.
+
+
+3. Exercises 11.3 (i) and (ii)
+
+    (i) Define the system predicate \== using == and the cut-fail combination. 
+
+    (ii) Define nonvar using var and the cut-fail combination. 
+
+
+4. Belgian Snake Problem 
+The body of the Belgian snake shows a repeating pattern. However, the pattern
+is not necessarily repeated an integral number of times. A pattern consists of a
+sequence of rings, and a ring has an identifier which is an atom of length 1. 
+
+When the Belgian snake takes a nap, it likes to lie coiled up in a particular way: 
+it always lies in a rectangle, its head in the upper left corner and filling the 
+rectangle row by row (see the query below). 
+
+Write a predicate snake/3, which displays such a coiled up Belgian snake. 
+This predicate will be called with the following three arguments: 
+a list of atoms representing a pattern, a list whose length is equal to
+the number of rings in one column and a list whose length is equal to the number
+of rings in one row. 
+
+Your snake/3 should draw the coiled up snake as output on the screen. For example: 
+
+?- snake([a,b,c,d],[_,_,_,_,_],[_,_,_]).
+abcda
+badcb
+cdabc
+
+This snake would look like abcdabcdabcdabc when stretched out.
+There is a catch: Belgian snakes dislike arithmetic computations very much.
+Therefore, we urge you to avoid any arithmetic. 
+
+Hints
+The snake consists of an ever repeating pattern, and one way of representing this 
+is by a cyclic list: it contain the pattern and bites its tail. 
+
+This cyclic list is used as a infinite supply of the pattern, from which we need 
+to take pieces with the same length as the list in the second argument. 
+This piece must be reversed for even rows.
+
+5. Program the N-Queen problem from the book.
+
+6. Write a Prolog program to solve cryptarithmetic addition problems such as
+        S E N D
+    +   M O R E
+    ------------
+      M O N E Y
+
+The solution is D = 7, E = 5, M = 1, N = 6, 0 = 0, R = 8, S = 9, Y = 2. 
+Each letter should stand for a unique digit. If there is a solution, Prolog should 
+return the list of letters and corresponding digits. 
+If there is no solution, Prolog should report ‘no’.
+
+7. Solve the stable marriage problem in Exercise 14.1 (ii) pg. 261
+Write a program to solve the stable marriage problem (Sedgewick, l983), stated as 
+follows:
+
+Suppose there are N men and N women who want to get married. Each man has a list of
+all the women in his preferred order, and each woman has a list of all the men in 
+her preferred order. The problem is to find a set of marriages that is stable.
+A pair of marriages is unstable, if there are a man and woman who prefer each other
+to their spouses. For example, consider the pair of marriages where David is 
+married to Paula, and Jeremy is married to Judy. If David prefers Judy to Paula. 
+and Judy prefers David to Jeremy, the pair of marriages is unstable. This pair 
+would also be unstable if Jeremy preferred Paula to Judy, and Paula preferred 
+Jeremy to David. 
+
+A set of marriages is stable if there is no pair of unstable marriages.
+Your program should have as input lists of preferences. and produce as output a 
+stable set of marriages. It is a theorem from graph theory that this is always 
+possible. Test the program on the following five men and five women with their 
+associated preferences:
+
+avraham: chana tamar zvia ruth sarah
+binyamin: zvia chana ruth sarah tamar
+chaim: chana ruth tamar sarah zvia
+david: zvia ruth chana sarah tamar
+elazar: tamar ruth chana zvia sarah
+
+zvia: elazar avraham david binyamin chaim
+chana: david elazar binyamin avraham chaim
+ruth: avraham david binyamin chaim elazar
+sarah: chaim binyamin david avraham elazar
+tamar: david binyamin chaim elazar avraham
+
+
+8. Program the block worlds problem described in the book (program the intelligent 
+behavior using choose action on page 269). Assume that there are 3 locations p, q 
+and r, and five blocks a, b, c, d, e. 
+
+Generate a plan to go from initial configuration shown below to final configuration 
+shown below. 
+
+Initial configuration:
+b   e
+a c d
+______
+p q r
+
+
+Final configuration:
+e   a
+d b c
+______
+p q r
+
+
+9. Consider the missionary­cannibal problem. Three missionaries and three
+cannibals come to a river that they want to cross and find a boat that holds two. 
+If the cannibals ever outnumber the missionaries on either bank, the missionaries 
+will be eaten.
+Think of this problem as a planning problem and program it in Prolog. You should 
+print a sequence of moves (one per line) that lists the people crossing the river 
+at each step. You can represent the 3 cannibals as c1, c2 and c3, and the three 
+missionaries as m1, m2 and m3. For example, the move:
+c1 m1
+means that cannibal c1 and missionary m1 went from the bank where the boat is to 
+the other bank. Keep in mind that the boat is always needed to go from one side to 
+another. 
