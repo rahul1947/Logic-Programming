@@ -43,6 +43,7 @@ All exercise numbers refer to the Sterling and Shapiro text book.
 
         Program 8.3 An iterative factorial
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 2. Exercises 9.2.1 (i), (ii), (iv), (v).
 
@@ -79,6 +80,7 @@ All exercise numbers refer to the Sterling and Shapiro text book.
 
     Program 9.3 A program for substituting in a term.
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 3. Exercises 11.3 (i) and (ii)
 
@@ -86,6 +88,7 @@ All exercise numbers refer to the Sterling and Shapiro text book.
 
     (ii) Define nonvar using var and the cut-fail combination. 
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 4. Belgian Snake Problem 
 The body of the Belgian snake shows a repeating pattern. However, the pattern is not necessarily repeated an integral number of 
@@ -118,9 +121,11 @@ and bites its tail.
 This cyclic list is used as a infinite supply of the pattern, from which we need to take pieces with the same length as the 
 list in the second argument. This piece must be reversed for even rows.
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 5. Program the N-Queen problem from the book.
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 6. Write a Prolog program to solve cryptarithmetic addition problems such as
         S E N D
@@ -131,6 +136,8 @@ list in the second argument. This piece must be reversed for even rows.
 The solution is D = 7, E = 5, M = 1, N = 6, 0 = 0, R = 8, S = 9, Y = 2. Each letter should stand for a unique digit. If there 
 is a solution, Prolog should return the list of letters and corresponding digits. If there is no solution, Prolog should 
 report ‘no’.
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 7. Solve the stable marriage problem in Exercise 14.1 (ii) pg. 261. 
 Write a program to solve the stable marriage problem (Sedgewick, l983), stated as follows:
@@ -158,6 +165,7 @@ ruth: avraham david binyamin chaim elazar
 sarah: chaim binyamin david avraham elazar
 tamar: david binyamin chaim elazar avraham
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 8. Program the block worlds problem described in the book (program the intelligent behavior using choose action on page 269). 
 Assume that there are 3 locations p, q and r, and five blocks a, b, c, d, e. 
@@ -177,6 +185,7 @@ d b c
 ______
 p q r
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 9. Consider the missionary­cannibal problem. Three missionaries and three cannibals come to a river that they want to cross and 
 find a boat that holds two. If the cannibals ever outnumber the missionaries on either bank, the missionaries will be eaten. 
@@ -192,3 +201,4 @@ means that cannibal c1 and missionary m1 went from the bank where the boat is to
 
 Keep in mind that the boat is always needed to go from one side to another. 
 
+----------------------------------------------------------------------------------------------------------------------------------
