@@ -1,0 +1,42 @@
+Problem 1: Program the N­Queen problem in CLP(FD). Follow the structure of the 8 queens problem whose code is given to you.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Problem 2: Write a CLP(FD) program to solve all cryptarithmetic addition problems. 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Problem 3: Program the Zebra puzzle in CLP(FD).
+
+	Nationality: [Englishman, Spaniard, Japanese, Italian, Norwegian], 
+	Color: [Green, Red, Yellow, Blue, White], 
+	Occupation: [Painter, Diplomat, Violinist, Doctor, Sculptor], 
+	Animal: [Dog, Zebra, Fox, Snail, Horse], 
+	Drink: [Juice, Water, Tea, Coffee, Milk])
+
+	ZEBRA PROBLEM: RULES
+
+	1. The Englishman lives in the red house.
+	2. The Spaniard owns a dog.
+	3. The Japanese is a painter.
+	4. The Italian drinks tea. 
+	5. The Norwegian lives in the first house.
+	6. The owner of the green house drinks coffee.
+	7. The green house is on the right of the white house.
+	8. The sculptor breeds the snail.
+	9. The diplomat lives in the yellow house.
+	10. Milk is drunk in the middle house.
+	11. The Norwegian's house is next to the blue one.
+	12. Violinist drinks fruit juice.
+	13. The fox is in the house next to that of the doctor.
+	14. The horse is in the house next to that of the diplomat.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Problem 4: Program the Sudoku Puzzle in CLF(FD). You should read input from the user which consists of a series of terms of the 
+form: f(X,Y,Z). in a file called ”input”. 
+
+The term f(X,Y,Z) states that the square at position (X, Y) has value Z (Z  ∈  1..9). The input file is used to indicates the 
+values given at the various squares in the puzzle. Your program should print the solution on the screen using write statements. 
+
+----------------------------------------------------------------------------------------------------------------------------------
