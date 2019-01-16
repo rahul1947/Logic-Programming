@@ -1,0 +1,81 @@
+Part 1. Reach Chapters 4 and 5 in Gelfond and Kahl's book.
+__________________________________________________________________________________________________________________________________
+
+Part 2. Review the "Intro to ASP and Practice Problems" document on the course page to practice with ASP. 
+__________________________________________________________________________________________________________________________________
+
+Part 3. Solve Problems #1, #3, #5, #7, #9 from Chapter 5 in Gelfond and Kahl's book. All problems to be programmed and run on 
+    CLASP (download CLASP from https://potassco.org/ ; you will have to ground your program first using the GRINGO system, then 
+    find answer sets using the CLASP system). 
+
+    Q1. "Apollo and Helios are lions in a zoo. Normally lions are dangerous. Baby lions are not dangerous. Helios is a baby 
+    lion." Assume that the zoo has a complete list of baby lions that it maintains regularly. Your program should be able to 
+    deduce that Apollo is dangerous, whereas Helios is not. Make sure that
+
+    a. if you add another baby lion to knowledge base, the program would derive that it is not dangerous, even though that 
+    knowledge is not explicit; and
+    
+    b. if you add an explicit fact that Apollo is not dangerous, there is no contradiction and the program answers intelligently. 
+
+    ------------------------------------------------------------------------------------------------------------------------------
+
+    Q3. "American citizens normally live in United States. American diplomats may or may not live in the United States. 
+    John, Miriam, and Caleb are American citizens. John lives in Italy. Miriam is an American Diplomat."
+    
+    a. Assume we do not have complete list of American diplomats. (Note that your program should not be able to conclude that 
+    Caleb lives in United States.)
+    
+    b. Now assume we have a complete list of American diplomats. Add this information to the program. What does your new 
+    program say about Caleb's place of residence?
+    
+    c. Rewrite the program from 3b by using the simplified form of the cancellation axiom.
+
+    ------------------------------------------------------------------------------------------------------------------------------
+
+    Q5. "A field that studies pure ideas does not study the natural world. A field that studies the natural world does not study 
+    the pure ideas. Mathematics normally studies pure ideas. Science normally studies the natural world. As a computer scientist, 
+    Daniela studies both mathematics and science. Both mathematics and science study our place in the world."
+
+    Make sure your program can deduce that Daniela studies our place in the world
+
+    ------------------------------------------------------------------------------------------------------------------------------
+
+    Q7. You are given three complete lists of facts of the form
+    course(math), course(graphs), ..., student(john), student(mary), ..., took(john,math), took(mary,graphs), ...
+    
+    Students can graduate only if they have taken all the courses in the first list. Write a program that, given the above 
+    information, determines which students can graduate. Make sure that, given the following sample knowledge base, 
+    
+    student(john). student(mary).
+    course(graphs). course(math).
+    took(john,math). took(john,graphs). took(mary,graphs).
+
+    your program is able to conclude 
+    can_graduate(john).
+    -can_graduate(mary).
+
+    ------------------------------------------------------------------------------------------------------------------------------
+
+    Q9. Using the notions of hierarchy and defaults as detailed in Section 5.4, write an ASP program to represent the following 
+    information. Be as general as you can. 
+
+        1. A Selmer Mark VI is a saxophone.
+        2. Jake's saxophone is a Selmer Mark VI.
+        3. Mo's saxophone is a Selmer Mark VI.
+        4. Part of a saxophone is a high D key.
+        5. Part of the high D key is a spring that makes it work.
+        6. The spring is normally not broken.
+        7. Mo's spring for his high D key is broken. 
+
+    Make sure that your program correctly entails that Jake's saxophone works while Mo's is broken. For simplicity, assume that 
+    no one has more than one saxophone, and hence, saxophones can be identified by the name of their owner.
+__________________________________________________________________________________________________________________________________
+
+Part 4. Solve the following problems using the s(ASP) system; recode them in ASP, not Prolog:
+    
+    Q1. Program the graph coloring problem in ASP (use the code discussed in class)
+    
+    Q2. Program the block's world problem from HW 7 using ASP
+    
+    Q3. Program the Missionary-Cannibal problem 
+__________________________________________________________________________________________________________________________________
