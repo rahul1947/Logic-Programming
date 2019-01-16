@@ -96,8 +96,8 @@ All exercise numbers refer to the Sterling and Shapiro text book.
         2. It may be helpful to deﬁne relations such as 
         # has-flush(Hand), which is true if all the cards in Hand are of the same suit; 
         # has-full-house(Hand), which is true if Hand has three cards with the same value but in different suits, and the other 
-            two cards have the same different value; and 
-        # has_straight(Hand),which is true if Hand has cards with consecutive values.  
+        two cards have the same different value; and 
+        # has_straight(Hand), which is true if Hand has cards with consecutive values.  
 
         3. The number of cases to consider is reduced if the hand is first sorted.
 
@@ -105,7 +105,7 @@ All exercise numbers refer to the Sterling and Shapiro text book.
 
 3. Given the sorted binary tree (SBT) representation discussed in class, define the following functions
     sumtree(T, N): N is the sum of elements in SBT T (use succ arithmetic).
-    delete(E, T, Tn): delete the element E from SBT T to obtain SBT Tn.
+    delete(E,T,Tn): delete the element E from SBT T to obtain SBT Tn.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
