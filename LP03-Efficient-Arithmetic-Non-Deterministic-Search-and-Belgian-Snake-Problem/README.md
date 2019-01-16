@@ -3,7 +3,7 @@
 - [Rahul Nalawade](https://github.com/rahul1947)
 - 2018-Feb-18
 
-**Problems:** [Problems](https://github.com/rahul1947/Logic-Programming/blob/master/LP03-Efficient-Arithmetic-Non-Deterministic-Search-and-Belgian-Snake-Problem/as3-18.pdf), [Belgian Snake Problem](https://github.com/rahul1947/Logic-Programming/blob/master/LP03-Efficient-Arithmetic-Non-Deterministic-Search-and-Belgian-Snake-Problem/belgian-snake.pdf) 
+**Problems:** [Problems](https://github.com/rahul1947/Logic-Programming/blob/master/LP03-Efficient-Arithmetic-Non-Deterministic-Search-and-Belgian-Snake-Problem/Problems.txt) 
 
 **Solution:** [Report](https://github.com/rahul1947/Logic-Programming/blob/master/LP03-Efficient-Arithmetic-Non-Deterministic-Search-and-Belgian-Snake-Problem/CS6374-HW03-rsn170330.pdf)
 
