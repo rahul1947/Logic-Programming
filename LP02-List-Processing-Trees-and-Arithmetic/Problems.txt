@@ -113,7 +113,8 @@ All exercise numbers refer to the Sterling and Shapiro text book.
 
     (i) Write an iterative version for triangle(N,T), posed as Exercise 8.2(i).
         Exercise 8.2
-        (i) The Nth triangular number is the sum of the numbers up to and including N. Write a program for the relation triangle (N ,T), where '1' is the Nth triangular number. (Hint: Adapt Program 8.2.)
+        (i) The Nth triangular number is the sum of the numbers up to and including N. Write a program for the relation 
+        triangle(N ,T), where '1' is the Nth triangular number. (Hint: Adapt Program 8.2.)
 
         %factorial(N,F): F is the integer N factorial.
 
@@ -151,5 +152,5 @@ All exercise numbers refer to the Sterling and Shapiro text book.
         factorial(N,N,F,F).
 
         Program 8.3 An iterative factorial
-        
+
 ----------------------------------------------------------------------------------------------------------------------------------
