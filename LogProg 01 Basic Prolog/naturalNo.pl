@@ -20,7 +20,7 @@ plus(s(X),Y,s(Z)) :- plus(X,Y,Z).
 times(0,Y,0) :- nat(Y).
 
 times(s(X),Y,A) :- 
-	times(X,Y,Z), plus(Z,Y,A).
+    times(X,Y,Z), plus(Z,Y,A).
 
 greaterthan(s(X),0) :- nat(X).
 
@@ -39,9 +39,9 @@ lessthan(s(X),s(Y)) :- lessthan(X,Y).
 factorial(0,s(0)).
 
 factorial(s(X),Y) :- 
-	greaterthan(s(X),0),  
-	factorial(X,Z),
-	times(s(X),Z,Y).
+    greaterthan(s(X),0),  
+    factorial(X,Z),
+    times(s(X),Z,Y).
 
 % Yes, factorial function would work in opposite direction, 
 % as shown with tail-recursion predicate fact(N,F) below.
@@ -53,9 +53,9 @@ fact(s(X),Y) :- fact(s(X),s(0),Y).
 fact(0,Y,Y). 
 
 fact(s(X),A,Y) :- 
-	greaterthan(s(X),0),
-	times(s(X),A,Z),
-	fact(X,Z,Y).
+    greaterthan(s(X),0),
+    times(s(X),A,Z),
+    fact(X,Z,Y).
 
 %-------------------------------- Q8 --------------------------------
 
@@ -72,7 +72,7 @@ grteq(s(X),s(Y)) :- grteq(X,Y).
 minus(Y,0,Y) :- nat(Y),!.
 
 minus(s(X),s(Y),Z) :-
-	grteq(s(X),s(Y)), minus(X,Y,Z).
+    grteq(s(X),s(Y)), minus(X,Y,Z).
 
 % minus(X,Y,Z) :- plus(Y,Z,X).
 
@@ -81,14 +81,14 @@ division(X,0,undefined,Q) :- nat(X), nat(Q).
 division(0,s(Y),0,0) :- nat(Y).
 
 division(X,Y,0,X) :- 
-	X \== 0, Y \== 0, lessthan(X,Y).
+    X \== 0, Y \== 0, lessthan(X,Y).
 
 division(X,Y,Q,R) :- 
-	greaterthan(Y,0),
-	grteq(X,Y),
-	minus(X,Y,Z),
-	division(Z,Y,W,R),
-	plus(W,s(0),Q).
+    greaterthan(Y,0),
+    grteq(X,Y),
+    minus(X,Y,Z),
+    division(Z,Y,W,R),
+    plus(W,s(0),Q).
 
 %-------------------------------- Q9 --------------------------------
 
@@ -100,9 +100,9 @@ fib(0, s(0)) :- !.
 fib(s(0), s(0)) :- !.
 
 fib(s(s(X)), F) :-
-	greaterthan(s(s(X)),s(0)),
-	fib(s(X), F1),
-	fib(X,F2),
-	plus(F1,F2,F).
+    greaterthan(s(s(X)),s(0)),
+    fib(s(X), F1),
+    fib(X,F2),
+    plus(F1,F2,F).
 
 %--------------------------------------------------------------------
