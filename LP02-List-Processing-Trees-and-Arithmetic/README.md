@@ -1,4 +1,4 @@
-## Logic Programming 02: List Processing Trees and Arithmetic
+## Logic Programming 02: List Processing, Trees and Arithmetic
 
 - [Rahul Nalawade](https://github.com/rahul1947)
 - 2018-Feb-01 
