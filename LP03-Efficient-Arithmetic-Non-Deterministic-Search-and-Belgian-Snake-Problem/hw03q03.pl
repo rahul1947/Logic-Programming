@@ -6,7 +6,7 @@
 %i. Define the system predicate \== using == and the 
 % cut-fail combination.
 notEq(X,Y) :- 
-	neg(X==Y).
+    neg(X==Y).
 
 neg(P) :- P, !, fail.
 neg(_).
@@ -15,6 +15,6 @@ neg(_).
 
 nonVar(Term):- var(Term), !, fail.
 nonVar(Term):-
-	neg(var(Term)).
+    neg(var(Term)).
 
 %----------------------------------------------------------
