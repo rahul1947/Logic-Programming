@@ -1,6 +1,6 @@
 % CS6374: Computational Logic - Assignment 02
 % Rahul Nalawade [RSN170330]
-% Date: 2018-02-01 
+% Date: 2018-Feb-01 
 
 %--------------------- i. -----------------------
 %i. substitute(X,Y,L1,L2): where L2 is the result of 

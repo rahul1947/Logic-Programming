@@ -1,6 +1,6 @@
 % CS6374: Computational Logic - Assignment 02
 % Rahul Nalawade [RSN170330]
-% Date: 2018-02-01 
+% Date: 2018-Feb-01 
 
 %-------------- From Assignment 01 --------------
 % Implement the programs discussed in class for plus, times, and 
