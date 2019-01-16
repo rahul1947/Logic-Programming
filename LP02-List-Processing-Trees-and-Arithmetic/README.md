@@ -57,6 +57,7 @@ Program 3.16 Reversing a list
 ```
 
 **Solution:** [Program 01](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/a02q01.pl)
+_______________________________________________________________________________
 
 **Problem 2:** Solve the following exercises (exercises 3.3.1 (i), (ii), (iii), (v), (vi), (vii) from the book).
 
@@ -96,16 +97,16 @@ Hints:
 
 	1. Represent a poker hand by a list of terms of the form card(Suit,Value). For example a hand consisting of the 2 of clubs, the 5 of spades, the queen of hearts, the queen of diamonds, and the 7 of spades would be represented by the list 
 	[card(clubs,2), card(spades,5), card(hearts,queen), card(diamonds,queen), card(spades,7)]. 
-	
+
 	2. It may be helpful to deﬁne relations such as 
 	has-flush(Hand), which is true if all the cards in Hand are of the same suit; 
 	has-full-house(Hand), which is true if Hand has three cards with the same value but in different suits, and the other two cards have the same different value; and 
 	has_straight(Hand),which is true if Hand has cards with consecutive values.  
-	
+
 	3. The number of cases to consider is reduced if the hand is first sorted.
 
 **Solution:** [Program 02](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/a02q02.pl) and for Better-Poker-Hand [Poker](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/pokerA2.pl)
-
+_______________________________________________________________________________
 
 **Problem 3:** Given the sorted binary tree (SBT) representation discussed in class, define the following functions - 
 ```
@@ -114,7 +115,7 @@ delete(E,T,Tn): delete the element E from SBT T to obtain SBT Tn.
 ```
 
 **Solution:** [Sorted Binary Tree](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/a02q03.pl)
-
+_______________________________________________________________________________
 
 **Problem 4:** Solve the following exercises (exercises 8.3.1 (i), (iii), (vi), (vii) from the book).
 
@@ -165,7 +166,7 @@ Program 8.3 An iterative factorial
 ```
 
 **Solution:** [Program 04](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/a02q04.pl)
-
+_______________________________________________________________________________
 
 **NOTE:**
 - You can find almost all the solution in [Report](https://github.com/rahul1947/Logic-Programming/blob/master/LP02-List-Processing-Trees-and-Arithmetic/CS6374-HW03-rsn170330.pdf) for all of the above problems. 
